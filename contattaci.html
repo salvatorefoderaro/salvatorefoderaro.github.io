@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Shop Homepage - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+
+<script>
+
+function validateForm() {
+  var name =  document.getElementById('name').value;
+  if (name == "") {
+      document.querySelector('.status').innerHTML = "Il nome non può essere vuoto!";
+      return false;
+  }
+  var email =  document.getElementById('email').value;
+  if (email == "") {
+      document.querySelector('.status').innerHTML = "L'email non può essere vuota!";
+      return false;
+  } 
+  var subject =  document.getElementById('subject').value;
+  if (subject == "") {
+      document.querySelector('.status').innerHTML = "Il soggetto non può essere vuoto!";
+      return false;
+  }
+  var message =  document.getElementById('message').value;
+  if (message == "") {
+      document.querySelector('.status').innerHTML = "Il messaggio non può essere vuoto!";
+      return false;
+  }
+  document.querySelector('.status').innerHTML = "Invio il messaggio...";
+}
+
+</script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dove_siamo.html">Dove siamo</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contattaci.html">Contattaci</a>
+            <span class="sr-only">(current)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+<!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contattaci!</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Hai qualche domanda riguardo ai nostri prodotti? Contattaci per e-mail, riceverai una risposta nel più breve tempo possibile!</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5" style="margin:0px auto;">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Il tuo nome...">                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <p><input type="text" id="email" name="email" class="form-control" placeholder="La tua e-mail...">
+                        </p>
+                            </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                           <p>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Oggetto del messaggio...">
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Messaggio..."></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <p><div class="text-center text-md-left">
+               <center><a class="btn btn-primary" onclick="validateForm();">Invia il messaggio</a></center>
+                </div>
+            </p>
+            <div class="status" style="margin: 0px auto;"></div>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
