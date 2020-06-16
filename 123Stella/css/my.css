@@ -64,6 +64,18 @@ span.prodotto {
 	text-align: justify;
 }
 
+span.prodottoSingolo {
+width:80%;
+margin: 0px auto;
+}
+
+img.immagineProdotto {
+	display: block;
+	margin: 0px auto;
+	width: 50%;
+	margin-bottom: 10px;
+}
+
 img {
 	margin:0px auto;
 	width:100%;
