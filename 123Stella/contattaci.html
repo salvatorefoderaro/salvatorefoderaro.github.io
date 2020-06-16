@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Titolo Negozio - Contattaci</title>
+    
+	<link rel="stylesheet" type="text/css" href="css/my.css">
+
+<script>
+
+    function validateForm() {
+      var name =  document.getElementById('name').value;
+      if (name == "") {
+          alert("Il nome non può essere vuoto!");
+          return;
+      }
+      var email =  document.getElementById('email').value;
+      if (email == "") {
+        alert("L'email non può essere vuota!");
+        return;
+      } 
+      var subject =  document.getElementById('subject').value;
+      if (subject == "") {
+          alert("Il soggetto non può essere vuoto!");
+          return;
+      }
+      var message =  document.getElementById('message').value;
+      if (message == "") {
+          alert("Il messaggio non può essere vuoto!");
+          return;
+      }
+      alert("Invio il messaggio...");
+    }
+    
+    </script>
+
+</head>
+
+<body>
+
+	<div id="navMenu">
+		<a href="index.html">Home</a>
+		<a href="dovesiamo.html">Dove Siamo</a>
+		<a href="contattaci.html">Contattaci</a>
+	</div>
+
+<form>
+    <input type="text" id="name" name="name" class="form-control" placeholder="Il tuo nome...">
+    <input type="text" id="email" name="email" class="form-control" placeholder="La tua e-mail...">
+    <input type="text" id="subject" name="subject" class="form-control" placeholder="Oggetto del messaggio...">
+    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Messaggio..."></textarea>
+    <a class="button" onclick="validateForm();">Invia il messaggio</a>
+
+       <!--Grid column-->
+</form>
+
+
+<div id="footer">
+    <p>Copyright © 2020 - NOME COGNOME</p>
+</div>
+
+</body>
+
+</html>

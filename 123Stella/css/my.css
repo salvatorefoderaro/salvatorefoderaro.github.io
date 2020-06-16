@@ -1,0 +1,170 @@
+html * {
+	font-family: 'Oswald', sans-serif;
+}
+
+#body {
+	width:100%;
+	font: 'Oswald', sans-serif;
+}
+
+#content {
+	width: 80%;
+	margin: 0px auto;
+}
+
+#navMenu{
+	width: 100%;
+	text-align:center;
+	margin-bottom:40px;
+	margin-top:10px;
+}
+
+#navMenu a{
+	font-weight:500;
+	text-transform:uppercase;
+	text-decoration:none;
+	color: black;
+	margin:0 15px;
+	font-size:16px;
+	letter-spacing:1px;
+	position:relative;
+	display:inline-block;
+}
+
+#navMenu a:before{
+	content:'';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background:white;
+	top:40%;
+}
+
+span.b {
+	display: inline-block;
+	width: 30%;
+	height: 200px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+span.prodotto {
+	display: inline-block;
+	width: 30%;
+	height: 200px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+img {
+	margin:0px auto;
+	width:100%;
+	margin-bottom: 20px;
+}
+
+.titolo {
+	margin-top:1px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	font-size: 25px;
+	line-height: 25px;
+	color:black; 
+}
+
+.prezzo {
+	margin-bottom: 5px;
+	margin-top:5px;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 25px;
+	color:black; 
+}
+
+.descrizione {
+	margin-bottom: 5px;
+	margin-top: 7px;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 25px;
+	color:black; 
+}
+
+.marca {
+	margin-bottom: 1px;
+	margin-top: 2px;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 25px;
+	color:black; 
+}
+
+input {
+	border:0; outline:0;
+	padding: 1em;
+	display: block;
+	width: 100%;
+	margin-top: 1em;
+	border-color:grey;
+	border: 1px;
+	background-color: black;;
+	font-family: 'Oswald', sans-serif;
+	color:white;
+}
+
+textarea {
+	border:0; outline:0;
+	padding: 1em;
+	display: block;
+	width: 100%;
+	margin-top: 1em;
+	border-color:grey;
+	border: 1px;
+	background-color: black;;
+	color:white;
+}
+
+form {
+	width:70%;;
+	text-align: center;
+	margin: 40px auto;
+}
+
+.button {
+	margin:0px auto;
+	border:0; outline:0;
+	padding: 1em;
+	display: block;
+	width: 200px;
+	margin-top: 1em;
+	border-color:grey;
+	border: 1px;
+	background-color: black;;
+	color:white;
+}
+
+.button:hover {
+	color:white;
+}
+
+p.info {
+	text-align: center;
+	font-size: 15px;
+}
+
+#footer {
+	margin:0px auto;
+	margin-top:30px;
+	width:95%;
+	text-transform:uppercase;
+	text-decoration:none;
+	color: black;
+	font-size:16px;
+	text-align: center;
+	padding: 10px;
+}
